@@ -44,7 +44,7 @@
 //   });
   
   /*==================== GITHUB CALENDAR ====================*/
-  GitHubCalendar(".calendar", "suraj-996", {
+  GitHubCalendar(".calendar", "Sanjiv358", {
     responsive: true,
     global_stats: false,
     tooltips: true,
