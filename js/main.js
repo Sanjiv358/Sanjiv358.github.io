@@ -282,3 +282,9 @@
       }
     );
   });
+
+  document.getElementById("resume1").onclick = function() {newWindowResum()};
+
+function newWindowResum(){
+  window.open("https://drive.google.com/file/d/1JqUwJB10wmCJYIy2wHFMlwgY2IYmWpAE/view?usp=sharing");
+}
