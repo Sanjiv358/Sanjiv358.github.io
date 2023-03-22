@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    /* color: orange; */
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background: crimson;
+    font-family: sans-serif;
+
+
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    /* color: #ff004f; */
+
+    font-size: 35px;
+    font-weight: 600;
+
+
+}
+
+.navbar .menu .li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    /* color: #ff004f; */
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(images/slazzer-edit-image.png); */
+
+
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+.container {
+    padding: 10px 10%;
+
+}
+
+nav {
+    display: flex;
+    background-color: #080808;
+
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+/* --------------------skill-card-name------------------ */
+.skills-card-name{
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #060606;
+    padding: 10px 5px;
+}
+
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    /* color: #ff004f; */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    /* background: #ff004f; */
+    background: linear-gradient(#ff004f,orange,#fff);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+   
+}
+
+/* --------------------type writer----------------------- */
+
+
+
+
+
+
+
+
+
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+.imk img{
+    width: 100%;
+    /* height: 50vh; */
+    border-radius: 15px;
+}
+
+
+/* ---------------------about------------------ */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+#user-detail-intro{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+
+
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/* -----------------------------skills-------------------------- */
+#skills {
+    padding: 50px 0;
+
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.skill {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 30vh;
+
+
+}
+
+
+/* ---------------------projects-section------------------------------ */
+#projects {
+    padding: 50px 0;
+
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 50vh;
+
+}
+
+.project a {
+    text-align: center;
+    margin: auto;
+}
+
+/* ----------------------github section---------------------------------- */
+#githubs {
+    padding: 50px 0;
+
+}
+
+.github-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+/* .calendar{
+    height: 5vh;
+    
+} */
+
+.github {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.github img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 30vh;
+
+
+}
+
+.github a {
+    text-align: center;
+    margin: auto;
+}
+
+/* -----------------------------contact-------------------- */
+.contact-left {
+    flex-basis: 35%;
+
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left:p {
+    margin-top: 30px;
+}
+
+.contact-left:p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: tranform(0.5s);
+
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right form {
+    width: 100%;
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+
+.copyright i {
+    color: #ff004f;
+
+}
+
+/* -----------------resume button---------------- */
+#resume-button-2,#resume-link-1{
+    display: block;
+    height: 50px;
+    width: 250px;
+    background: #ff004f;
+    text-align: center;
+    padding: 5px 10px;
+    /* position: absolute; */
+    /* margin: auto; */
+    margin-top: 5px;
+    text-decoration: none;
+    list-style: none;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    color: #fff;
+}
+
+#resume-link-1{
+    font-size: 25px;
+}
+
+#contact-phone ,#contact-email{
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 15px;
+    padding: 5px 10px;
+
+}
+/* --------------------css for small screen------- */
+
+nav .fas {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    /* #header {
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+
+    } */
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+
+    }
+
+
+    .header-text h1 {
+
+        font-size: 30px;
+
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+
+        font-size: 40px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+}

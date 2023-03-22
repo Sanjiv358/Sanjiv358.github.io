@@ -1,582 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio website</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+  integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+    integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+
+
+
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<!-- <link
+rel="stylesheet"
+href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+/> -->
+</head>
+
+<body>
+
+  <!-- ------------------HOME SECTION START------------------------ -->
+
+
+  <div id="header">
+    <div class="container">
+
+      <nav id="nav-menu" class="black">
+        <!-- <img src="images/logo1.png" alt="" class="logo home-img"> -->
+        <!-- <h1 style="color: #98067e;">NEHA</h1>  -->
+
+        <ul id="sidemenu">
+          <li><a class="nav-link home" href="#home">HOME</a></li>
+          <!-- <li><a href="#header">HOME</a></li> -->
+          <li><a class="nav-link about" href="#about">ABOUT</a></li>
+          <li><a class="nav-link skills" href="#skills">SKILLS</a>
+          </li>
+          <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+          <li><a href="#githubs">GITHUB</a></li>
+          <li><a  class="nav-link contact" href="#contact">CONTACT</a></li>
+          <!-- <li><a class="nav-link resume" href="#"></a></li> -->
+          <li><button id="resume-button-1" onclick="resume()"><a id="resume-link-1" class="nav-link resume" href="files/Sanjiv-Kumar-Resume.pdf" download="SANJIV-RESUME-DOWNLOAD" target="_blank">Resume</a></button></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div id="home" class="header-text">
+        <!-- <p>JAVA BACKEND DEVELOPER</p> -->
+        <!-- <h1 >Hi,I'm <span class="type"> Neha</span> <br>Jaiswal from Maharashtra</h1>
+        <h4>A Java Backend Developer with a specialization in Java,Spring Boot,Hibernate,Maven,Mysql,HTML,CSS,Javascript
+          Excellent Teamwork , self-motivated and curious, with a keen interest in building user-centric products.
+        </h4> -->
+        <!-- <button class="btn btn-primary"><a download="" href="files/NEHA_JAISWAL_Resume.pdf" target="_blank">Download
+
+            cv</a></button> -->
+            
+
+            <div class="container">
+              <div class="row">
+               
+                <div class="about-col-2">
+                  <!-- <h1 class="sub-title">About Me</h1>
+                  <h1 id="user-detail-name">Neha</h1> -->
+                  <h1 >Hi,I'm <span class="type"> Sanjiv Kumar</span> <br>Mahto from Bihar</h1>
+        <p>An Aspiring JAVA Back-end Developer, strong in design and integration with intuitive problem-solving skills. I have ability to translate business requirements into technical solutions.
+        </p>
+        <button id="resume-button-2" onclick="resume()"><a id="resume-link-2"  href="files/Sanjiv-Kumar-Resume.pdf" download="SANJIV-RESUME-DOWNLOAD" target="_blank">Resume</a></button>
     
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-	<link rel="icon" href="images/logo1.png" type="image/x-icon">
-	<script
-	type="text/javascript"
-	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-	></script>
-
-	<script type="text/javascript">
-	(function () {
-	emailjs.init("boSUHQ0vU7uaGlSaw");
-	})();
-	</script>
-
-	<!-- github stats -->
-	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-	<link
-	rel="stylesheet"
-	href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-	/>
-	<title>Sanjiv Kumar Mahto</title>
-	
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SP7GDZG56V"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-SP7GDZG56V');
-	</script>
-	
-	<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-PR7CFFH');</script>
-<!-- End Google Tag Manager -->
-	
-	<!-- HTML Meta Tags -->
-<title>Sanjiv Kumar Mahto - Full Stack Software Developer</title>
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="nav-menu navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div id="nav-menu" class="container">
-	      <a class="navbar-brand" href="index.html">Sanjiv Kumar Mahto</a>
-		  <div class="dropdown">
-			<button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  Menu
-			</button>
-			<div class="dropdown-menu" style="background-color: rgb(0,0,0);" aria-labelledby="dropdownMenuButton">
-			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#nameDiv">Home</a>
-			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#about-section">About</a>
-			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#skills-section">Skills</a>
-			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#projects-section">Projects</a>
-			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#blog-section">My Blog</a>
-			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#contact-section">Contact</a>
-			</div>
-		  </div>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse"  id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#nameDiv" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Stats</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-			  <li class="nav-item"><a id="resume1" href="Resume/Sanjiv-Kumar-Resume.pdf" download="Sanjiv-Kumar-Resume" class="nav-link"><span>Resume</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-
-
-	  
-	  <section id="home" class="hero">
-		  
-    </section>
-    <div id="profileimage">
-      <img src="images/sanjiv.jpg" alt="">
-    </div>
-	<div id="nameDiv" class="col-md-12 text-center">
-		<h1 class="animate-charcter">Hi I'am Sanjiv</h1>
-    <br>
-		<h1 class="animate-charcter">FULL STACK WEB DEVELOPER</h1>
-	</div>
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about">
-    	<div class="container">
-    		<div class="row d-flex">
-    			<div class="col-md-6 col-lg-5 d-flex">
-    				<div class="img-about img d-flex align-items-stretch">
-    					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/sanjiv.jpg);">
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">About</h1>
-		            <h2 class="mb-4">About Me</h2>
-		            <p style="margin-top: 10%;">An Aspiring JAVA Back-end Developer, strong in design and integration with intuitive problem-solving skills.
-						I have ability to translate business requirements into technical solutions.</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span>Sanjiv Kumar Mahto</span></li>
-		            	<li class="d-flex"><span>Date of birth:</span> <span>March,02,1997</span></li>
-		            	<li class="d-flex"><span>Address:</span> <span>Bihar, Patna</span></li>
-		            	<li class="d-flex"><span>Pin code:</span> <span>800027</span></li>
-		            	
-		            	<li class="d-flex"><span>Phone: </span> <span>+91-9540064897</span></li>
-		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-              	<p class="mb-4">
-	                <span class="number" data-number="3">3</span>
-	                <span>Project complete</span>
-                </p>
-				<p><a id="resume1" href="Resume/Sanjiv-Kumar-Resume.pdf" download="Sanjiv-Kumar-Resume" target="_blank" class="btn btn-primary py-3 px-3">Resume</a></p>
-              </div>
-	          </div>
-	        </div>
-        </div>
-    	</div>
-    </section>
- 
-	
-		<section class="ftco-section" id="skills">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Skills</h1>
-            <h2 class="mb-4" >My Skills</h2>
-          </div>
-        </div>
-				<div class="skills">
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/icons8-html-5.svg" alt="html5 logo">
-					<h3 class="h3">HTML 5</h3>
-				</a>	
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/icons8-css3.svg" alt="CSS logo">
-					<h3 class="h3">CSS</h3>
-				</a>
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/icons8-javascript.svg" alt="JavaScript logo">
-					<h3 class="h3">JAVASCRIPT</h3>
-				</a>
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/java-svgrepo-com.svg" alt="JAVA logo">
-					<h3 class="h3">JAVA</h3>
-				</a>
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/spring-icon.svg" alt="Spring logo">
-					<h3 class="h3">SPRING</h3>
-				</a>
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/spring-boot-logo.png" alt="SpringBoot logo">
-					<h3 class="h3">SPRING BOOT</h3>
-				</a>
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/hibernate_logo_icon_171004.svg" alt="Hibernate logo">
-					<h3 class="h3">HIBERNATE</h3>
-				</a>
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/mysqlworkbench_102952.svg" alt="Mysql logo">
-					<h3 class="h3">MYSQL</h3>
-				</a>
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/external-content.duckduckgo.com.png" alt="Servlets logo">
-					<h3 class="h3">SERVLETS & JSP</h3>
-				</a>
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/icons8-github.svg" alt="Github logo">
-					<h3 class="h3">GITHUB</h3>
-				</a>
-
-				<a class="logo_div" href="https://www.w3.org/" rel="noopener noreferrer" target="_blank"> 
-					<img src="images/command.png" alt="CLI bash logo">
-					<h3 class="h3">CLI BASH</h3>
-				</a>
-				</div>
-			</div>
-		</section>
- 
-
-    <section class="ftco-section ftco-project" id="projects">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-          </div>
-        </div>
-    		<div class="projects" style="margin-top: 5%;">
-				<div>
-					<div class="image_div">
-						<img src="images/crime.jpg.png" alt="">
-					</div>
-					<div class="para_div">
-						<h3>Crime Managment System</h3>
-						<p class="projectDes">Crime Information Management System is an application which interact with crime and criminal database and take the information from the database and give it to the user. </p>
-						<div>
-							<button>Java</button>
-							<button>Spring Boot</button>
-							<button>Hibernate</button>
-							<button>MYSQL</button>
-						</div>
-					</div>
-					<div>
-						<a href="https://github.com/Sanjiv358/spiteful-amusement-9850" target="_blank"><button
-								class="button-84">Code</button></a>
-						<a href="https://drive.google.com/file/d/1Bnhpoy3E7jrVWK5g5-KJTpF__ubb7VXX/view" target="_blank"><button class="button-84">Live</button></a>
-
-					</div>
-				</div>
-				<div>
-					<div class="image_div">
-						<img src="images/lumen.png" alt="">
-					</div>
-					<div class="para_div">
-						<h3>Lumen 5 Clone</h3>
-						<p class="projectDes">This is the short video maker website which is used for make short video for content marketing, business purposes and advertisment</p>
-						<div>
-							<button>HTML</button>
-							<button>CSS</button>
-							<button>JAVASCRIPT</button>
-							<button>API</button>
-						</div>
-					</div>
-					<div>
-						<a href="https://github.com/Sanjiv358/-plucky-throne-4544" target="_blank"><button class="button-84">Code</button></a>
-            <a href="https://sanjiv358.github.io/-plucky-throne-4544/" target="_blank"><button class="button-84">Live</button></a>
-
-					</div>
-				</div>
-				<div>
-					<div class="image_div">
-						<img src="images/pluralsight.png" alt="">
-					</div>
-					<div class="para_div">
-						<h3>Pluralsight Clone</h3>
-						<p class="projectDes">A front-end clone of PluralSight webpage developed by team of 5 members in time span of 5 days. It is for company who want upskill his employee.</p>
-						<div>
-							<button>HTML</button>
-							<button>CSS</button>
-							<button>JAVASCRIPT</button>
-						</div>
-					</div>
-					<div>
-						<a href="https://github.com/Sanjiv358/Pluralsight" target="_blank"><button class="button-84">Code</button></a>
-			<a href="https://sanjiv358.github.io/Pluralsight/" target="_blank"><button class="button-84">Live</button></a>
-
-					</div>
-				</div>
- 				
-				<div>
-					<div class="image_div">
-						<img src="images/fitmeal.png" alt="">
-					</div>
-					<div class="para_div">
-						<h3>FitMeal Clone</h3>
-						<p class="projectDes"> This is an individual project. I make during my construct week. This is the solution for people who wnat to enjoy his meal with health and taste.</p>
-						<div>
-							<button>Html</button>
-							<button>CSS</button>
-							<button>Javascript</button>
-							<button>API</button>
-						</div>
-					</div>
-					<div>
-						<a href="https://github.com/Sanjiv358/fitmeal" target="_blank"><button
-								class="button-84">Code</button></a>
-						<a href="https://sanjiv358.github.io/fitmeal/" target="_blank"><button class="button-84">Live</button></a>
-
-					</div>
-				</div> 
-    		</div>
-    	</div>
-    </section>
-
-
-    <section class="ftco-section" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Statistics</h1>
-            <h2 class="mb-4">My Stats</h2>
-          </div>
-        </div>
-		<div class="statistic__row">
-			<div class="content">
-			  <div class="statistic__circle">
-				<div class="container round">
-				  <div class="circular">
-					<div class="inner"></div>
-					<div class="number">1200+</div>
-					<div class="circle">
-					  <div class="bar left">
-						<div class="progress"></div>
-					  </div>
-					  <div class="bar right">
-						<div class="progress"></div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<h3>Hours</h3>
-				<p style="margin-top: -30px">of coding</p>
-			  </div>
-			  <div class="statistic__circle">
-				<div class="container round">
-				  <div class="circular">
-					<div class="inner"></div>
-					<div class="number">200+</div>
-					<div class="circle">
-					  <div class="bar left">
-						<div class="progress"></div>
-					  </div>
-					  <div class="bar right">
-						<div class="progress"></div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<h3>Leetcode</h3>
-				<p style="margin-top: -30px">problems</p>
-			  </div>
-			  <div class="statistic__circle">
-				<div class="container round">
-				  <div class="circular">
-					<div class="inner"></div>
-					<div class="number">5+</div>
-					<div class="circle">
-					  <div class="bar left">
-						<div class="progress"></div>
-					  </div>
-					  <div class="bar right">
-						<div class="progress"></div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<h3>Projects</h3>
-				<p style="margin-top: -30px">done</p>
-			  </div>
-			  <div class="statistic__circle">
-				<div class="container round">
-				  <div class="circular">
-					<div class="inner"></div>
-					<div class="number">700+</div>
-					<div class="circle">
-					  <div class="bar left">
-						<div class="progress"></div>
-					  </div>
-					  <div class="bar right">
-						<div class="progress"></div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<h3>Git</h3>
-				<p style="margin-top: -30px">commits</p>
-			  </div>
-			  <div class="statistic__circle">
-				<div class="container round">
-				  <div class="circular">
-					<div class="inner"></div>
-					<div class="number">100+</div>
-					<div class="circle">
-					  <div class="bar left">
-						<div class="progress"></div>
-					  </div>
-					  <div class="bar right">
-						<div class="progress"></div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<h3>Hours</h3>
-				<p style="margin-top: -30px">of soft skills</p>
-			  </div>
-			</div>
-		  </div>
-        <div class="blogs">
-          <div class= "blog" >
-          	<div class="blog-entry justify-content-end">
-             <a href="" target="_blank"> <img src="images/zmcseason2.png" class="image">
-              </img></a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">Dec 16, 2022</span>
-	                </p>
-                </div>
-                <h3 class="heading"><a>Zoom Marathon challenge certificate</a></h3>
-                <p>A first step towards my dream</p>
-              </div>
-            </div>
-          </div>
-          <div class= "blog">
-          	<div class="blog-entry justify-content-end">
-			<a href=""  target="_blank">
-              <img src="images/linkedin.png" class="image">
-              </img></a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-						<span class="mr-2">Dec 19, 2022</span>
-	                </p>
-                </div>
-				<h3 class="heading"><a>26 days consistent post on linkedin</a></h3>
-				<p>A first step towards my dream</p>
-              </div>
-            </div>
-          </div>
-          <div class= "blog">
-          	<div class="blog-entry">
-			<a href="" target="_blank">
-				<img src="images/leet.png" class="image">
-              </img>
-              </a>
+                  
               
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-						<span class="mr-2">Dec 01, 2022</span>
-	                </p>
                 </div>
-				<h3 class="heading"><a href="single.html">Leetcode problem solved</a></h3>
-				<p>A first step towards my dream</p>
+                <div class="about-col-1 imk">
+                  <img src="images/slazzer-edit-image.png" alt="">
+                </div>
+        
               </div>
             </div>
+            
+      </div>
+
+    </div>
+  </div>
+  <!-- ************************About************************ -->
+  <div id="about" class="about section">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/sanjiv.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title" style="padding-top: 50px;">About Me</h1>
+          <h1 id="user-detail-name">Sanjiv Kumar Mahto</h1>
+          <h2 id="user-detail-intro">
+            An Aspiring JAVA Back-end Developer, strong in design and integration with intuitive problem-solving skills.
+            I have ability to translate business requirements into technical solutions.
+       
+      </h2>
+      <h2 id="user-detail-intro">Name: Sanjiv Kumar Mahto
+        </h2>
+        <h2 id="user-detail-intro">
+        Date of birth: March,02,1997
+        </h2>
+        <h2 id="user-detail-intro">
+        Address: Bihar, Patna
+        </h2>
+        <h2 id="user-detail-intro">Pin code: 800027</h2>
+        <h2 id="user-detail-intro">
+        Phone: +91-9540064897</h2>
+      
+          
+         
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------------------------Skills------------------------------- -->
+
+
+  <div id="skills">
+    <div class="container skills-card">
+      <h1 class="sub-title">TECH STACK </h1>
+      <div class="skills-list">
+        <div class="skill">
+          <img class="skills-card-img"
+            src="data:image/png;base64,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"
+            alt="">
+            <h5 class="skills-card-name">HTML</h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img"
+            src="data:image/png;base64,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"
+            alt="">
+            <h5 class="skills-card-name">CSS </h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img"
+            src="data:image/jpeg;base64,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"
+            alt="">
+            <h5 class="skills-card-name">JavaScript</h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img"
+            src="data:image/jpeg;base64,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"
+            alt="">
+            <h5 class="skills-card-name">BootStrap</h5>
+        </div>
+        <div class="skill">
+          <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" alt="">
+          <h5 class="skills-card-name">JAVA</h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img"
+            src="https://images.ctfassets.net/23aumh6u8s0i/4JFn93iA5DZgomgcIPJOPx/700a59ae9668acf22df959dcf45b409a/spring"
+            alt="">
+            <h5 class="skills-card-name">Spring Boot</h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img" src="https://www.zend.com/sites/default/files/image/2020-04/image-blog-mysql-php.jpg" alt="">
+          <h5 class="skills-card-name">MySQL</h5>
+        </div>
+        <div class="skill">
+          <img class="skills-card-img" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Maven.png" alt="">
+          <h5 class="skills-card-name">Maven</h5>
+        </div>
+
+        <div class="skill">
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Hibernate_logo_a.png" alt="">
+          <h5 class="skills-card-name">Hibernate</h5>
+        </div>
+
+        <div class="skill">
+          <img class="skills-card-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/800px-Amazon_Web_Services_Logo.svg.png"
+            alt="">
+            <h5 class="skills-card-name">AWS</h5>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- -----------------------------projects section----------------------------- -->
+
+
+
+  <div id="projects">
+    <div class="container ">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="project-list  owl-carousel owl-theme">
+     
+        <div class="project project-card">
+          <img src="images/crime.jpg.png" alt="">
+          <div class="layer">
+
+            <h2 class="project-title">Crime Management System</h2>
+            <h3 class="project-tech-stack">Java | Mysql | Spring </h3>
+            <p class="project-description">Crime Information Management System is an application which interact with crime and criminal database and take the information from the database and give it to the user.</p>
+            <a class="project-github-link" href="https://github.com/Sanjiv358/spiteful-amusement-9850" target="_blank"><i
+                class="fa-brands fa-github"></i>Github</a>
+            <a class="project-deployed-link" href="https://drive.google.com/file/d/1Bnhpoy3E7jrVWK5g5-KJTpF__ubb7VXX/view" target="_blank"><i
+                class="fa-solid fa-link"></i>Website</a>
           </div>
+        </div>
+        <div class="project project-card">
+          <img src="images/lumen.png" alt="">
+          <div class="layer">
+            <h2 class="project-title">Lumen 5 Clone</h2>
+            <h3 class="project-tech-stack">HTML | CSS |JAVASCRIPT | API</h3>
+            <p class="project-description">This is the short video maker website which is used for make short video for content marketing, business purposes and advertisment</p>
+            <a class="project-github-link" href="https://github.com/Sanjiv358/-plucky-throne-4544" target="_blank"><i
+                class="fa-brands fa-github"></i>Github</a>
+            <a class="project-deployed-link" href="https://sanjiv358.github.io/-plucky-throne-4544/" target="_blank"><i
+                class="fa-solid fa-link"></i>Website</a>
+          </div>
+        </div>
+      
+
+        <div class="project project-card">
+          <img src="images/pluralsight.png" alt="">
+          <div class="layer">
+
+            <h2 class="project-title">Pluralsight clone</h2>
+            <h3 class="project-tech-stack">HTML | CSS |JAVASCRIPT  </h3>
+            <p class="project-description">A front-end clone of PluralSight webpage developed by team of 5 members in time span of 5 days. It is for company who want upskill his employee.</p>
+            <a class="project-github-link" href="https://github.com/Sanjiv358/Pluralsight" target="_blank"><i
+                class="fa-brands fa-github"></i>Github</a>
+            <a class="project-deployed-link" href="https://sanjiv358.github.io/Pluralsight/" target="_blank"><i
+                class="fa-solid fa-link"></i>Website</a>
+          </div>
+        </div>
+
+        <div class="project project-card">
+          <img src="images/fitmeal.png" alt="">
+          <div class="layer">
+            <h2 class="project-title">Fitmeal clone</h2>
+            <h3 class="project-tech-stack">HTML | CSS |JAVASCRIPT </h3>
+            <p class="project-description">This is an individual project. I make during my construct week. This is the solution for people who wnat to enjoy his meal with health and taste.</p>
+            <a class="project-github-link" href="https://github.com/Sanjiv358/fitmeal" target="_blank"><i
+                class="fa-brands fa-github"></i>Github</a>
+            <a class="project-deployed-link" href="https://sanjiv358.github.io/fitmeal/" target="_blank"><i
+                class="fa-solid fa-link"></i>Website</a>
+          </div>
+        </div>
+
+     
+
+       
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ---------------------Github section-------------------------- -->
+
+  <div id="githubs">
+    <div class="container react-activity-calendar">
+      <h1 class="sub-title">GitHub React-Activity-Calendar</h1>
+      <div class="github-list">
+       
+        
+        <div class="github">
+          <!-- <h1>GitHub React-Activity-Calendar</h1> -->
+          <img
+          id="github-streak-stats"
+          src="https://github-readme-streak-stats.herokuapp.com?user=Sanjiv358&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+          alt="streakstat"
+        />
+
+        </div>
+        <div class="github" id="tops">
+          <img
+        id="github-top-langs"
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanjiv358&theme=outrun"
+        alt="top_languages"
+      />
+
+        </div>
+        
+
+        <div class="github">
+          <img
+        id="github-stats-card"
+        src="https://github-readme-stats.vercel.app/api?username=Sanjiv358&count_private=true"
+        alt="stat-card"
+      />
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- -----------------------contact-form section--------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+
+          <h1 class="sub-title">Contact me</h1>
+          <!-- <i class="fa-solid fa-paper-plane"></i> -->
+          <!-- <p> <a id="contact-email" href="nehaas1900@gmail.com"></a>contact@example.com</p>
+          <p><a id="contact-phone" href="#"><i class="fa-sharp fa-solid fa-phone"></i></a>098765567</p> -->
+          <a id="contact-phone" href="#">Mobile<i class="fa-solid fa-phone"></i></a>
+      <a id="contact-email" href="mailto:sanjivmahto8@gmail.com">Email<i class="fa-solid fa-envelope"></i></a>
+      <section id="resume">
+        <a id="resume-link-1" href="files/Sanjiv-Kumar-Resume.pdf" download="">Download CV</a>
+        <!-- <button id="resume-button-1"></button> -->
+      </section>
+          <div class="social-icons">
+            <a  id="contact-github" href="https://github.com/Sanjiv358"><i class="fa-brands fa-github"></i></a>
+            <a id="contact-linkedin" href="https://www.linkedin.com/in/sanjiv-kumar-mahto-ba9b5b13a/"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <!-- <a href="files/NEHA_JAISWAL_Resume.pdf" download class="btn btn2" target="_blank">Download CV</a> -->
+        </div>
+        <div class="contact-right">
+          <form action="mailto:sanjivmahto8@gmail.com">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+          </form>
+
+
         </div>
       </div>
-    <!-- </section>
-											==================== Statistic ====================
-	
-											==================== Github Stats ==================== -->
-	<section class="github-stats section" id="github-stats">
-        <h2 class="section__title">GitHub Calendar</h2>
-        <span class="section__subtitle">Consistency is the key</span>
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-			<div class="col-md-7 heading-section text-center ftco-animate">
-			  <h1 class="big big-2">Github</h1>
-			  <h2 class="mb-4">Github Calander</h2>
-			</div>
-		</div>
-        <div class="github-images">
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=Sanjiv358&show_icons=true&theme=default"
-            alt="Sanjiv358-github-stats"
-          />
-          <img
-            src="https://github-readme-streak-stats.herokuapp.com/?user=Sanjiv358&theme=default"
-            alt="Sanjiv358-github-current-streak-stats"
-          />
-        </div>
-        <div class="calendar"></div>
-    </section>
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<a href="https://www.linkedin.com/feed/" target="_blank"><span class="icon-linkedin-square"></span></a>
-          		</div>
-          		<h3 class="mb-4">Linkedin</h3>
-	            <p><a href="https://www.linkedin.com/feed/" target="_blank">Sanjiv Kumar Mahto</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          		<a href="https://wa.me/+919540064897" target="_blank"><span class="icon-whatsapp"></span></a>	
-          		</div>
-          		<h3 class="mb-4">WhatsApp</h3>
-	            <p><a href="https://wa.me/+919540064897" target="_blank">+91 9540064897</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<a href="mailto:sanjivmahto8@gmail.com" target="_blank"><span class="icon-paper-plane"></span></a>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:sanjivmahto8@gmail.com" target="_blank">sanjivmahto8@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<a href="https://github.com/Sanjiv358" target="_blank"><span class="icon-github"></span></a>
-          		</div>
-          		<h3 class="mb-4">GitHub</h3>
-	            <p><a href="https://github.com/Sanjiv358" target="_blank">Sanjiv Kumar Mahto</a></p>
-	          </div>
-          </div>
-        </div>
-
-        </div>
-    </section>
-		
-    <div style="text-align: center;">
-      <h6>Created By Sanjiv &#128151...</h6>
-    </div>         
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
+ 
   
-  <script src="js/main.js"></script>
-  <script src="js/git.js"></script>
-  </body>
+  
+  </div>
+
+  <!-- -----------------------carousel------------------------------------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        })
+    </script>
+
+
+
+
+
+
+
+
+
+
+<!-- --------------------resume-------------- -->
+  <!-- <section id="resume">
+    <a id="resume-link-1" href="files/NEHA_JAISWAL_Resume.pdf" download="">Resume</a>
+    <button id="resume-button-1"></button>
+  </section> -->
+
+  <div class="copyright">
+    <p>Copyright &#169 Made with <i class="fa-solid fa-heart"></i> by Sanjiv Kumar Mahto</p>
+  </div>
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemeu.style.right = "0";
+
+    }
+    function closemenu() {
+      sidemeu.style.right = "-200px";
+
+    }
+  </script>
+
+
+
+</body>
+
+
 </html>
+
+
+<script>
+  // document.getElementById('resume-button-1').addEventListener("click",()=>{
+  //   console.log("OPENinig.....")
+  //   window.open("https://drive.google.com/file/d/13jkqwMbkyN8YcAOpMxvF697_-RAyrC2H/view?usp=share_link", "_blank");
+  // })
+
+  // document.getElementById('resume-link-1').addEventListener("click",()=>{
+  //   console.log("OPENinig.....")
+  //   window.open("https://drive.google.com/file/d/13jkqwMbkyN8YcAOpMxvF697_-RAyrC2H/view?usp=share_link", "_blank");
+  // })
+
+  // document.getElementById('resume-button-2').addEventListener("click",()=>{
+  //   console.log("OPENinig.....")
+  //   window.open("https://drive.google.com/file/d/13jkqwMbkyN8YcAOpMxvF697_-RAyrC2H/view?usp=share_link", "_blank");
+  // })
+  function resume(){
+    window.open("https://drive.google.com/file/d/13jkqwMbkyN8YcAOpMxvF697_-RAyrC2H/view?usp=share_link", "_blank");
+  }
+</script>
+
+
+
+
+
+
+
+
