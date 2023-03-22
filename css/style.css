@@ -3445,7 +3445,7 @@ input[type="button"].btn-block {
 .tab-content > .active {
   display: block; }
 
-.navbar {
+.nav-menu {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3459,8 +3459,8 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem; }
-  .navbar > .container,
-  .navbar > .container-fluid {
+  .nav-menu > .container,
+  .nav-menu > .container-fluid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
