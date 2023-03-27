@@ -89,7 +89,7 @@ nav {
     width: 100%;
 
     position: fixed;
-
+    padding: 15px;
     top: 0;
     left: 0;
     z-index: 1;
@@ -116,8 +116,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
-    /* color: #ff004f; */
+    /* color: #fff; */
+    color: #ff004f;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -457,18 +457,18 @@ form .btn2 {
     display: block;
     height: 50px;
     width: 250px;
-    background: #ff004f;
+    background: #631aa8;
     text-align: center;
     padding: 5px 10px;
     /* position: absolute; */
     /* margin: auto; */
-    margin-top: 5px;
-    text-decoration: none;
+    margin-top: 10px;
+    /* text-decoration: none; */
     list-style: none;
     left: 0;
     right: 0;
     border-radius: 15px;
-    color: #fff;
+    color: #fff
 }
 
 #resume-link-1{
