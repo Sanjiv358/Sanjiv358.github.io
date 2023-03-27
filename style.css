@@ -459,9 +459,12 @@ form .btn2 {
     display: block;
     height: 45px;
     width: 170px;
-    background: #58a81a;
-    text-align: center;
+    background: #050322;
+    /* text-align: center; */
     padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* position: absolute;
     margin: auto; */
     margin-top: 0px;
@@ -470,9 +473,18 @@ form .btn2 {
     /* left: 0;
     right: 0; */
     border-radius: 0px;
-    color: #fff
+    color: #e8dede;
+    font-size: 25px;
+    
 }
-
+#resume-button-2>a{
+    color: #fff;
+    border: none;
+    
+}
+.amazing{
+    margin-bottom: 30px;
+}
 #resume-link-1{
     /* margin-top: 10px; */
     font-size: 22px;
