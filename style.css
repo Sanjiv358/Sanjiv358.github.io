@@ -65,13 +65,12 @@ body {
 
 #home {
     width: 100%;
-    height: 100vh;
+    height: auto;
     /* background-image: url(images/slazzer-edit-image.png); */
-
-
     background-size: cover;
     background-position: center;
-    min-height: 300px;
+    /* margin-top: 80px; */
+    /* max-height: 300px; */
 }
 
 .container {
