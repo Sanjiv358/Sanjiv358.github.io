@@ -478,8 +478,9 @@ form .btn2 {
 #contact-phone ,#contact-email{
     text-decoration: none;
     color: #ff004f;
-    font-size: 15px;
+    font-size: 25px;
     padding: 5px 10px;
+    margin-top: 15px;
 
 }
 /* --------------------css for small screen------- */
