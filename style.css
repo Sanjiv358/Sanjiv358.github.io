@@ -386,7 +386,7 @@ nav ul li a:hover::after {
 }
 
 .social-icons {
-    margin-top: 30px;
+    margin-top: 15px;
 
 }
 
@@ -453,26 +453,31 @@ form .btn2 {
 }
 
 /* -----------------resume button---------------- */
+#resume{
+    margin-top: 15px;
+}
 #resume-button-2,#resume-link-1{
     display: block;
-    height: 50px;
-    width: 250px;
-    background: #631aa8;
+    height: 45px;
+    width: 170px;
+    background: #58a81a;
     text-align: center;
     padding: 5px 10px;
-    /* position: absolute; */
-    /* margin: auto; */
-    margin-top: 10px;
-    /* text-decoration: none; */
+    /* position: absolute;
+    margin: auto; */
+    margin-top: 0px;
+    text-decoration: none;
     list-style: none;
-    left: 0;
-    right: 0;
-    border-radius: 15px;
+    /* left: 0;
+    right: 0; */
+    border-radius: 0px;
     color: #fff
 }
 
 #resume-link-1{
-    font-size: 25px;
+    /* margin-top: 10px; */
+    font-size: 22px;
+    text-align: center;
 }
 
 #contact-phone ,#contact-email{
@@ -480,7 +485,7 @@ form .btn2 {
     color: #ff004f;
     font-size: 25px;
     padding: 5px 10px;
-    margin-top: 15px;
+    /* margin-top: -10px; */
 
 }
 /* --------------------css for small screen------- */
