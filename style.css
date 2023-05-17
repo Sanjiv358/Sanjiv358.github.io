@@ -300,7 +300,6 @@ nav ul li a:hover::after {
 .project-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(500px, 1fr));
-
     grid-gap: 40px;
     margin-top: 50px;
 
@@ -505,7 +504,7 @@ nav .fas {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 842px) {
     /* #header {
         background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
 
